@@ -1,0 +1,147 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de Administración | Kiara</title>
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .admin-panel { max-width: 700px; margin: 2rem auto; background: var(--gris); border-radius: 16px; padding: 2rem; box-shadow: 0 2px 8px rgba(31,70,144,0.08); }
+    .admin-panel h2 { color: var(--rojo-nica); }
+    .admin-form { display: flex; flex-direction: column; gap: 1rem; }
+    .admin-form input, .admin-form select, .admin-form textarea { padding: 0.7rem; border-radius: 8px; border: 1px solid var(--azul-claro); font-size: 1rem; }
+    .admin-form label { font-weight: 600; }
+    .admin-form button { align-self: flex-end; }
+    .admin-lista { margin-top: 2rem; }
+    .admin-item { background: var(--blanco); border-radius: 10px; box-shadow: 0 2px 8px rgba(31,70,144,0.07); padding: 1rem; margin-bottom: 1rem; display: flex; align-items: center; justify-content: space-between; }
+    .admin-item img { width: 60px; height: 40px; object-fit: cover; border-radius: 6px; margin-right: 1rem; }
+    .admin-actions button { margin-left: 0.5rem; }
+    .admin-login { max-width: 350px; margin: 4rem auto; background: var(--blanco); border-radius: 12px; box-shadow: 0 2px 8px rgba(31,70,144,0.08); padding: 2rem; }
+  </style>
+</head>
+<body>
+  <div id="admin-login" class="admin-login">
+    <h2>Acceso Administrador</h2>
+    <input type="password" id="admin-pass" placeholder="Contraseña" />
+    <button onclick="loginAdmin()" class="btn-primary">Entrar</button>
+    <p id="login-error" style="color:var(--rojo-nica);"></p>
+  </div>
+  <div id="admin-panel" class="admin-panel" style="display:none;">
+    <h2>Panel de Administración</h2>
+    <form class="admin-form" id="form-plato">
+      <label>Nombre del plato<input type="text" id="nombre" required></label>
+      <label>Descripción<textarea id="descripcion" required></textarea></label>
+      <label>Categoría
+        <select id="categoria" required>
+          <option value="cocteles_sopas">Cocteles y Sopas</option>
+          <option value="antojitos_nicas">Antojitos Nicas</option>
+          <option value="varios">Varios</option>
+          <option value="refrescos">Refrescos</option>
+          <option value="pupusas">Pupusas</option>
+          <option value="desayuno_nica">Desayuno Nica</option>
+          <option value="comidas_rapidas">Comidas Rápidas</option>
+          <option value="especialidades">Especialidades de la Casa</option>
+          <option value="recomendaciones">Recomendaciones del Chef</option>
+          <option value="temporada">Platos de Temporada</option>
+        </select>
+      </label>
+      <label>Imagen (nombre de archivo)<input type="text" id="imagen" placeholder="ej: pupusa_volcanica.jpg" required></label>
+      <label>Precio<input type="number" id="precio" step="5" min="0" required></label>
+      <label>Sugerencia de bebida<input type="text" id="sugerencia_bebida"></label>
+      <label><input type="checkbox" id="recomendado"> Recomendado</label>
+      <label><input type="checkbox" id="ancla"> Mostrar anclaje de precio</label>
+      <label><input type="checkbox" id="temporada"> Plato de temporada</label>
+      <button type="submit" class="btn-primary">Guardar plato</button>
+    </form>
+    <div class="admin-lista" id="admin-lista"></div>
+    <button onclick="descargarMenu()" class="btn-primary">Descargar menú.json</button>
+  </div>
+  <script>
+    // Simulación de protección por contraseña (frontend)
+    const PASSWORD = 'kiara2024';
+    function loginAdmin() {
+      const pass = document.getElementById('admin-pass').value;
+      if(pass === PASSWORD) {
+        document.getElementById('admin-login').style.display = 'none';
+        document.getElementById('admin-panel').style.display = 'block';
+        cargarMenuAdmin();
+      } else {
+        document.getElementById('login-error').textContent = 'Contraseña incorrecta';
+      }
+    }
+    // CRUD básico en localStorage
+    let menu = [];
+    function cargarMenuAdmin() {
+      fetch('../data/menu.json').then(r=>r.json()).then(data=>{
+        menu = data;
+        renderMenuAdmin();
+      });
+    }
+    function renderMenuAdmin() {
+      const cont = document.getElementById('admin-lista');
+      cont.innerHTML = '';
+      menu.forEach((plato, idx) => {
+        const div = document.createElement('div');
+        div.className = 'admin-item';
+        div.innerHTML = `<img src="../assets/img/${plato.categoria}/${plato.imagen}" alt="${plato.nombre}"><div><b>${plato.nombre}</b><br><span>${plato.descripcion}</span><br><span>C$${plato.precio}</span></div><div class="admin-actions"><button onclick="editarPlato(${idx})">Editar</button><button onclick="eliminarPlato(${idx})">Eliminar</button></div>`;
+        cont.appendChild(div);
+      });
+    }
+    document.getElementById('form-plato').onsubmit = function(e) {
+      e.preventDefault();
+      const plato = {
+        nombre: document.getElementById('nombre').value,
+        descripcion: document.getElementById('descripcion').value,
+        categoria: document.getElementById('categoria').value,
+        imagen: document.getElementById('imagen').value,
+        precio: parseInt(document.getElementById('precio').value),
+        sugerencia_bebida: document.getElementById('sugerencia_bebida').value,
+        recomendado: document.getElementById('recomendado').checked,
+        ancla: document.getElementById('ancla').checked ? 'Ver opción premium' : '',
+        temporada: document.getElementById('temporada').checked
+      };
+      menu.push(plato);
+      localStorage.setItem('menuKiara', JSON.stringify(menu));
+      renderMenuAdmin();
+      this.reset();
+    };
+    window.editarPlato = function(idx) {
+      const plato = menu[idx];
+      document.getElementById('nombre').value = plato.nombre;
+      document.getElementById('descripcion').value = plato.descripcion;
+      document.getElementById('categoria').value = plato.categoria;
+      document.getElementById('imagen').value = plato.imagen;
+      document.getElementById('precio').value = plato.precio;
+      document.getElementById('sugerencia_bebida').value = plato.sugerencia_bebida || '';
+      document.getElementById('recomendado').checked = !!plato.recomendado;
+      document.getElementById('ancla').checked = !!plato.ancla;
+      document.getElementById('temporada').checked = !!plato.temporada;
+      menu.splice(idx,1);
+      localStorage.setItem('menuKiara', JSON.stringify(menu));
+      renderMenuAdmin();
+    };
+    window.eliminarPlato = function(idx) {
+      if(confirm('¿Eliminar este plato?')){
+        menu.splice(idx,1);
+        localStorage.setItem('menuKiara', JSON.stringify(menu));
+        renderMenuAdmin();
+      }
+    };
+    window.descargarMenu = function() {
+      const blob = new Blob([JSON.stringify(menu,null,2)], {type:'application/json'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'menu.json';
+      a.click();
+      URL.revokeObjectURL(url);
+    };
+  </script>
+</body>
+</html> 

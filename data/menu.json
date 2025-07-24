@@ -1,0 +1,432 @@
+[
+  {
+    "categoria": "cocteles_sopas",
+    "nombre": "Ceviche de pescado",
+    "descripcion": "Fresco, marinado en cítricos, ideal para abrir el apetito.",
+    "precio": 120,
+    "imagen": "ceviche_pescado.jpg",
+    "sugerencia_bebida": "Ideal con un vaso de cacao frío",
+    "recomendado": true
+  },
+  {
+    "categoria": "cocteles_sopas",
+    "nombre": "Coctel de conchas negras",
+    "descripcion": "Sabor intenso del mar, para los amantes de los mariscos.",
+    "precio": 200,
+    "imagen": "coctel_conchas.jpg",
+    "sugerencia_bebida": "Acompaña con jugo de limón fresco"
+  },
+  {
+    "categoria": "cocteles_sopas",
+    "nombre": "Coctel de camarones",
+    "descripcion": "Camarones frescos en salsa especial Kiara.",
+    "precio": 170,
+    "imagen": "coctel_camarones.jpg",
+    "sugerencia_bebida": "Perfecto con una Toña bien fría"
+  },
+  {
+    "categoria": "cocteles_sopas",
+    "nombre": "Consomé de pollo",
+    "descripcion": "Reconfortante y tradicional, como en casa.",
+    "precio": 50,
+    "imagen": "consome_pollo.jpg"
+  },
+  {
+    "categoria": "cocteles_sopas",
+    "nombre": "Consomé de pescado",
+    "descripcion": "Ligero y sabroso, con el toque de la casa.",
+    "precio": 60,
+    "imagen": "consome_pescado.jpg"
+  },
+  {
+    "categoria": "cocteles_sopas",
+    "nombre": "Consomé de camarones",
+    "descripcion": "Para los que buscan algo especial del mar.",
+    "precio": 70,
+    "imagen": "consome_camarones.jpg"
+  },
+  {
+    "categoria": "cocteles_sopas",
+    "nombre": "Coctel mixto",
+    "descripcion": "La mejor combinación de mariscos frescos.",
+    "precio": 210,
+    "imagen": "coctel_mixto.jpg",
+    "recomendado": true
+  },
+  {
+    "categoria": "antojitos_nicas",
+    "nombre": "Tostones con queso",
+    "descripcion": "Crujientes tostones con queso derretido.",
+    "precio": 130,
+    "imagen": "tostones_queso.jpg",
+    "sugerencia_bebida": "Semilla de jícaro – C$40"
+  },
+  {
+    "categoria": "antojitos_nicas",
+    "nombre": "Tostones mixtos",
+    "descripcion": "Para compartir, con variedad de acompañamientos.",
+    "precio": 100,
+    "imagen": "tostones_mixtos.jpg"
+  },
+  {
+    "categoria": "antojitos_nicas",
+    "nombre": "Maduro con queso",
+    "descripcion": "Dulzura y cremosidad en cada bocado.",
+    "precio": 80,
+    "imagen": "maduro_queso.jpg"
+  },
+  {
+    "categoria": "antojitos_nicas",
+    "nombre": "Churritos de pollo",
+    "descripcion": "Tiras de pollo empanizadas, perfectas para picar.",
+    "precio": 200,
+    "imagen": "churritos_pollo.jpg"
+  },
+  {
+    "categoria": "antojitos_nicas",
+    "nombre": "Fajitas de pescado",
+    "descripcion": "Finas tiras de pescado sazonadas y doradas.",
+    "precio": 200,
+    "imagen": "fajitas_pescado.jpg"
+  },
+  {
+    "categoria": "antojitos_nicas",
+    "nombre": "Fajitas de res",
+    "descripcion": "Carne de res jugosa, cortada en tiras y sazonada.",
+    "precio": 200,
+    "imagen": "fajitas_res.jpg"
+  },
+  {
+    "categoria": "antojitos_nicas",
+    "nombre": "Bolitas de carne de res con tostones",
+    "descripcion": "Bolitas de carne acompañadas de tostones crujientes.",
+    "precio": 170,
+    "imagen": "bolitas_res_tostones.jpg"
+  },
+  {
+    "categoria": "antojitos_nicas",
+    "nombre": "Pescado frito",
+    "descripcion": "Pescado entero frito, crocante por fuera y jugoso por dentro.",
+    "precio": 450,
+    "imagen": "pescado_frito.jpg",
+    "recomendado": true
+  },
+  {
+    "categoria": "antojitos_nicas",
+    "nombre": "Sopa de pescado",
+    "descripcion": "Sopa tradicional con pescado fresco y vegetales.",
+    "precio": 90,
+    "imagen": "sopa_pescado.jpg"
+  },
+  {
+    "categoria": "varios",
+    "nombre": "Ensalada de vegetales",
+    "descripcion": "Fresca, colorida y saludable.",
+    "precio": 180,
+    "imagen": "ensalada_vegetales.jpg"
+  },
+  {
+    "categoria": "varios",
+    "nombre": "Frijoles molidos",
+    "descripcion": "Clásico acompañante nica, cremoso y sabroso.",
+    "precio": 70,
+    "imagen": "frijoles_molidos.jpg"
+  },
+  {
+    "categoria": "varios",
+    "nombre": "Papas a la francesa",
+    "descripcion": "Crocantes y doradas, el snack universal.",
+    "precio": 80,
+    "imagen": "papas_francesa.jpg"
+  },
+  {
+    "categoria": "refrescos",
+    "nombre": "Cacao",
+    "descripcion": "Refresco tradicional, cremoso y refrescante.",
+    "precio": 40,
+    "imagen": "cacao.jpg"
+  },
+  {
+    "categoria": "refrescos",
+    "nombre": "Semilla de jícaro",
+    "descripcion": "Bebida energética y deliciosa.",
+    "precio": 40,
+    "imagen": "jicaro.jpg"
+  },
+  {
+    "categoria": "refrescos",
+    "nombre": "Melón-granadilla",
+    "descripcion": "Dulce y refrescante, ideal para el calor.",
+    "precio": 30,
+    "imagen": "melon_granadilla.jpg"
+  },
+  {
+    "categoria": "refrescos",
+    "nombre": "Jamaica",
+    "descripcion": "Color y sabor en cada sorbo.",
+    "precio": 30,
+    "imagen": "jamaica.jpg"
+  },
+  {
+    "categoria": "refrescos",
+    "nombre": "Té de limón",
+    "descripcion": "Refrescante y natural.",
+    "precio": 30,
+    "imagen": "te_limon.jpg"
+  },
+  {
+    "categoria": "refrescos",
+    "nombre": "Linaza",
+    "descripcion": "Saludable y ligera.",
+    "precio": 30,
+    "imagen": "linaza.jpg"
+  },
+  {
+    "categoria": "refrescos",
+    "nombre": "Agua",
+    "descripcion": "Siempre necesaria.",
+    "precio": 20,
+    "imagen": "agua.jpg"
+  },
+  {
+    "categoria": "refrescos",
+    "nombre": "Jugos",
+    "descripcion": "Naturales y frescos.",
+    "precio": 30,
+    "imagen": "jugos.jpg"
+  },
+  {
+    "categoria": "refrescos",
+    "nombre": "Gaseosas",
+    "descripcion": "Para todos los gustos.",
+    "precio": 30,
+    "imagen": "gaseosas.jpg"
+  },
+  {
+    "categoria": "refrescos",
+    "nombre": "Café",
+    "descripcion": "Aromático y fuerte, como nos gusta.",
+    "precio": 30,
+    "imagen": "cafe.jpg"
+  },
+  {
+    "categoria": "refrescos",
+    "nombre": "Té",
+    "descripcion": "Ligero y reconfortante.",
+    "precio": 30,
+    "imagen": "te.jpg"
+  },
+  {
+    "categoria": "varios",
+    "nombre": "Toña",
+    "descripcion": "Cerveza nacional, bien fría.",
+    "precio": 50,
+    "imagen": "tona.jpg"
+  },
+  {
+    "categoria": "varios",
+    "nombre": "Smirnoff",
+    "descripcion": "Para los que buscan algo diferente.",
+    "precio": 95,
+    "imagen": "smirnoff.jpg"
+  },
+  {
+    "categoria": "varios",
+    "nombre": "Tragos",
+    "descripcion": "Variedad de cocteles y licores.",
+    "precio": 50,
+    "imagen": "tragos.jpg"
+  },
+  {
+    "categoria": "especialidades",
+    "nombre": "Combo #1: Gallo pinto + queso frito + pupusas",
+    "descripcion": "El clásico salvadoreño-nica en un solo plato.",
+    "precio": 60,
+    "imagen": "combo1.jpg",
+    "recomendado": true
+  },
+  {
+    "categoria": "especialidades",
+    "nombre": "Combo #2: Gallo pinto + pupusas + maduro",
+    "descripcion": "Sabor y energía para tu día.",
+    "precio": 70,
+    "imagen": "combo2.jpg"
+  },
+  {
+    "categoria": "especialidades",
+    "nombre": "Combo #3: Gallo pinto + pupusas + queso + maduro",
+    "descripcion": "Para los que quieren probarlo todo.",
+    "precio": 85,
+    "imagen": "combo3.jpg"
+  },
+  {
+    "categoria": "especialidades",
+    "nombre": "Combo #4: Gallo pinto + pupusas + queso frito + maduro",
+    "descripcion": "El combo más completo y sabroso.",
+    "precio": 100,
+    "imagen": "combo4.jpg"
+  },
+  {
+    "categoria": "pupusas",
+    "nombre": "Pupusas de queso",
+    "descripcion": "Hechas a mano, recién salidas del comal, con el sabor que nos une.",
+    "precio": 30,
+    "imagen": "pupusa_queso.jpg",
+    "sugerencia_bebida": "Semilla de jícaro – C$40",
+    "recomendado": true
+  },
+  {
+    "categoria": "pupusas",
+    "nombre": "Pupusas mixtas",
+    "descripcion": "Queso, frijol y chicharrón en una sola pupusa.",
+    "precio": 30,
+    "imagen": "pupusa_mixta.jpg"
+  },
+  {
+    "categoria": "pupusas",
+    "nombre": "Pupusas de frijol",
+    "descripcion": "Rellenas de frijol molido, suaves y deliciosas.",
+    "precio": 30,
+    "imagen": "pupusa_frijol.jpg"
+  },
+  {
+    "categoria": "pupusas",
+    "nombre": "Pupusas de chicharrón",
+    "descripcion": "El sabor tradicional salvadoreño.",
+    "precio": 30,
+    "imagen": "pupusa_chicharron.jpg"
+  },
+  {
+    "categoria": "desayuno_nica",
+    "nombre": "Nacatamal (incluye café y pan)",
+    "descripcion": "Desayuno típico nica, completo y delicioso.",
+    "precio": 90,
+    "imagen": "nacatamal.jpg"
+  },
+  {
+    "categoria": "desayuno_nica",
+    "nombre": "Huevo + gallo pinto + pan + café",
+    "descripcion": "El desayuno que te da energía para todo el día.",
+    "precio": 110,
+    "imagen": "desayuno_huevo.jpg"
+  },
+  {
+    "categoria": "desayuno_nica",
+    "nombre": "Vigorón",
+    "descripcion": "Yuca, chicharrón y ensalada, clásico nica.",
+    "precio": 80,
+    "imagen": "vigoron.jpg"
+  },
+  {
+    "categoria": "desayuno_nica",
+    "nombre": "Chicharrón con tortilla",
+    "descripcion": "Crujiente y sabroso, para los que aman el cerdo.",
+    "precio": 80,
+    "imagen": "chicharron_tortilla.jpg"
+  },
+  {
+    "categoria": "desayuno_nica",
+    "nombre": "Cerdo con tortilla",
+    "descripcion": "Carne de cerdo jugosa, acompañada de tortilla.",
+    "precio": 100,
+    "imagen": "cerdo_tortilla.jpg"
+  },
+  {
+    "categoria": "comidas_rapidas",
+    "nombre": "Hot dog",
+    "descripcion": "Clásico, rápido y delicioso.",
+    "precio": 70,
+    "imagen": "hotdog.jpg"
+  },
+  {
+    "categoria": "comidas_rapidas",
+    "nombre": "Hamburguesa + papas + vaso de refresco",
+    "descripcion": "Combo completo para los amantes de la comida rápida.",
+    "precio": 95,
+    "imagen": "hamburguesa_combo.jpg"
+  },
+  {
+    "categoria": "comidas_rapidas",
+    "nombre": "Nacho sencillo",
+    "descripcion": "Totopos con queso y salsa.",
+    "precio": 80,
+    "imagen": "nacho_sencillo.jpg"
+  },
+  {
+    "categoria": "comidas_rapidas",
+    "nombre": "Nacho surtido",
+    "descripcion": "Totopos con carne, queso y vegetales.",
+    "precio": 100,
+    "imagen": "nacho_surtido.jpg"
+  },
+  {
+    "categoria": "comidas_rapidas",
+    "nombre": "Burritos",
+    "descripcion": "Rellenos de sabor y tradición.",
+    "precio": 130,
+    "imagen": "burritos.jpg"
+  },
+  {
+    "categoria": "comidas_rapidas",
+    "nombre": "Sandwich",
+    "descripcion": "Pan suave, relleno de lo que más te gusta.",
+    "precio": 120,
+    "imagen": "sandwich.jpg"
+  },
+  {
+    "categoria": "comidas_rapidas",
+    "nombre": "Quesadillas",
+    "descripcion": "Queso derretido en tortilla dorada.",
+    "precio": 120,
+    "imagen": "quesadillas.jpg"
+  },
+  {
+    "categoria": "especialidades",
+    "nombre": "Camarones empanizados",
+    "descripcion": "Acompañados con arroz, ensalada, tostones, papas o maduro.",
+    "precio": 260,
+    "imagen": "camarones_empanizados.jpg"
+  },
+  {
+    "categoria": "especialidades",
+    "nombre": "Curvina empanizada",
+    "descripcion": "Acompañada con arroz, ensalada, tostones, papas o maduro.",
+    "precio": 290,
+    "imagen": "curvina_empanizada.jpg"
+  },
+  {
+    "categoria": "especialidades",
+    "nombre": "Alitas picantes/empanizadas",
+    "descripcion": "Acompañadas con arroz, ensalada, tostones, papas o maduro.",
+    "precio": 190,
+    "imagen": "alitas.jpg"
+  },
+  {
+    "categoria": "especialidades",
+    "nombre": "Costilla de cerdo",
+    "descripcion": "Acompañada con arroz, ensalada, tostones, papas o maduro.",
+    "precio": 280,
+    "imagen": "costilla_cerdo.jpg"
+  },
+  {
+    "categoria": "especialidades",
+    "nombre": "Gordon blue (acompañado)",
+    "descripcion": "Acompañado con arroz, ensalada, tostones, papas o maduro.",
+    "precio": 320,
+    "imagen": "gordon_blue.jpg"
+  },
+  {
+    "categoria": "especialidades",
+    "nombre": "Filete mignon (acompañado)",
+    "descripcion": "Acompañado con arroz, ensalada, tostones, papas o maduro.",
+    "precio": 400,
+    "imagen": "filete_mignon.jpg"
+  },
+  {
+    "categoria": "especialidades",
+    "nombre": "Carne a la plancha",
+    "descripcion": "Acompañada con arroz, ensalada, tostones, papas o maduro.",
+    "precio": 0,
+    "imagen": "carne_plancha.jpg"
+  }
+] 
