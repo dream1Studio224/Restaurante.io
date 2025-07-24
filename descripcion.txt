@@ -1,0 +1,29 @@
+crea un menu para un restaurante y toma de refencia esa dos imagenes que estan en 
+la raiz del proyecto, el restaurante ofrece eso mismo platos que estan en esas imagenes
+dame un menu hermoso y estetico que llame la atencion del cliente y usa la teoria de los
+colores y usa estao aspectos:
+
+-paradoja de la eleccion
+
+-las zonas calientes
+
+-el poder de las letras 
+
+-el juego de precios
+
+-usa la tecnica del anclaje
+
+-crea una categoria (platos de temporada, recome4ndacion deñ chef)
+
+-fotos de calidad
+
+-bebidas importan(recomendaciones con comidas)
+
+-usar feedback
+
+-usa fuentes legibles
+
+usa colores que representen a la patria bella de nicaragua , el restaurante se llama 
+Kiara, y crea un panel de admin donde yo pueda agregar mas platos o bebidas y mas cosas
+, haslo para enganchar al cliente , creame una carpeta donde se guarden las imagenes
+y que esten categorizadas 

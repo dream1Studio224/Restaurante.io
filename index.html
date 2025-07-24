@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Kiara</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --azul-nica: #0066cc;
+            --blanco-nica: #ffffff;
+            --amarillo-nica: #ffd700;
+            --verde-nica: #0b6623;
+            --rojo-nica: #d7263d;
+        }
+
+        body {
+            font-family: 'Fredoka', sans-serif;
+            background-color: var(--blanco-nica);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, var(--azul-nica), var(--amarillo-nica));
+            text-align: center;
+            padding: 1rem;
+            color: var(--blanco-nica);
+        }
+
+        header img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0.5rem 0;
+        }
+
+        .categoria {
+            margin: 2rem auto;
+            padding: 1rem;
+            max-width: 1000px;
+        }
+
+        .categoria h2 {
+            background-color: var(--azul-nica);
+            color: var(--blanco-nica);
+            padding: 0.5rem;
+            border-radius: 8px;
+        }
+
+        .plato {
+            display: flex;
+            align-items: center;
+            margin: 1rem 0;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 1rem;
+        }
+
+        .plato img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 1rem;
+        }
+
+        .plato-info {
+            flex: 1;
+        }
+
+        .plato-info h3 {
+            margin: 0;
+            color: var(--rojo-nica);
+        }
+
+        .precio {
+            font-weight: bold;
+            color: var(--verde-nica);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./imagenes/mirador-de-catarina.webp" alt="Restaurante Kiara">
+        <h1>Restaurante Kiara</h1>
+        <p>Sabores auténticos de nuestra bella Nicaragua</p>
+    </header>
+
+    <main>
+        <section class="categoria">
+            <h2>Platos Típicos</h2>
+            <div class="plato">
+                <img src="./img/gallo_pinto.jpg" alt="Gallo Pinto">
+                <div class="plato-info">
+                    <h3>Gallo Pinto</h3>
+                    <p>Arroz y frijoles fritos acompañados de queso, crema y plátano.</p>
+                    <p class="precio">C$80</p>
+                </div>
+            </div>
+            <div class="plato">
+                <img src="./img/nacatamal.jpg" alt="Nacatamal">
+                <div class="plato-info">
+                    <h3>Nacatamal</h3>
+                    <p>Delicioso tamal nica con carne, arroz y vegetales envuelto en hoja de plátano.</p>
+                    <p class="precio">C$90</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="categoria">
+            <h2>Recomendación del Chef</h2>
+            <div class="plato">
+                <img src="./img/indio_viejo.jpg" alt="Indio Viejo">
+                <div class="plato-info">
+                    <h3>Indio Viejo</h3>
+                    <p>Guiso a base de maíz, carne desmenuzada y vegetales, ¡una joya culinaria!</p>
+                    <p class="precio">C$95</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="categoria">
+            <h2>Bebidas Naturales</h2>
+            <div class="plato">
+                <img src="./img/chan.jpg" alt="Refresco de Chan">
+                <div class="plato-info">
+                    <h3>Refresco de Chan</h3>
+                    <p>Bebida refrescante con semillas de chan, ideal para el calor nica.</p>
+                    <p class="precio">C$30</p>
+                </div>
+            </div>
+            <div class="plato">
+                <img src="./img/cacao.jpg" alt="Cacao">
+                <div class="plato-info">
+                    <h3>Refresco de Cacao</h3>
+                    <p>Bebida tradicional a base de cacao molido, azúcar y canela.</p>
+                    <p class="precio">C$35</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
